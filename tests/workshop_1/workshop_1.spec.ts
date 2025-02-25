@@ -9,7 +9,7 @@ await page.reload();
 
 
 
-test.skip('intercation with elements',async ({page})=>{
+test('intercation with elements',async ({page})=>{
 
     await page.goto('https://gitlab.com/');
     
@@ -23,7 +23,7 @@ test.skip('intercation with elements',async ({page})=>{
     await page.getByTestId('new-user-last-name-field').fill('Doe1');
 })
 
-test.only('test sign in',async ({page})=>{
+test('test sign in',async ({page})=>{
 
     await page.goto('https://gitlab.com/');
     
